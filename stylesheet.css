@@ -461,23 +461,26 @@ footer p:last-child {
     display: block;
     margin-bottom: 20px;
 }
+/* === How It Works Card === */
 
 .how-it-works {
-    width: 250px;
+    width: 260px;
 
     padding: 15px;
 
     border: 2px solid #2f3a4a;
     border-radius: 12px;
-	
+	margin-top: 30px;
 	margin-right: -100px;
 	margin-bottom: 40px;
+	margin-left: -95px;
 
     background-color: #f7e6d7;
 }
 .how-it-works h4 {
     margin-top: -10px;
     margin-bottom: 15px;
+	
 
     text-align: center;
 
@@ -491,18 +494,275 @@ footer p:last-child {
     padding-left: 20px;
     line-height: 1.8;
 }
+/*=== Form CSS ===*/
 
-.form-row {
+.form-columns {
     display: flex;
-    gap: 10px;
-
-    margin-bottom: -20px;
+    gap: 45px;
+    margin-top: 20px;
 }
 
-.form-row p {
+.left-column,
+.right-column {
     flex: 1;
 }
 
+/* Updated spacing for the appointment form layout*/
+.left-column p,
+.right-column p {
+	margin-bottom: 35px;
+}
+/*Letft and right form columns styling*/
+
+.right-column {
+	margin-left: 30px;
+}
+	
+.form-columns label {
+ 
+    font-weight: bold;
+}
+
+.date-time-row {
+    display: flex;
+    gap: 15px;
+}
+
+.date-time-row p {
+    flex: 1;
+}
+
+.pet-details {
+    display: flex;
+    align-items: flex-start;
+    gap: 74px;
+}
+.pet-weight {
+	margin-top: -5px;
+
+}
+
+.pet-weight input {
+    width: 120px;
+	height: 25px;
+
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: -20px;
+}
+textarea {
+    width: 100%;
+    min-height: 130px;
+	resize: none;
+}
+
+fieldset {
+	border: 1px solid #2f3a4a;
+	padding: 15px;
+	margin-top: 20px;
+	margin-bottom: 5px;
+	background-color: #FDEBDD;
+}
+
+legend {
+	font-weight: bold;
+	color: #2f3a4a;
+	padding: 0 8px;
+	
+}
+.right-column p:nth-child(3) {
+    margin-top: 50px;
+}
+
+.required-note {
+	font-size: 0.8em;
+	font-style: italic;
+	color: #2f3a4a;
+	margin-top: -15px;
+	margin-bottom: 30px;
+	margin-left: 8px;
+}
+.required-asterisk {
+	color: #ea700d;
+	font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+select,
+textarea {
+	
+	display: block;
+
+    width: 120%;
+
+    padding: 8px;
+
+    font-size: .95em;
+
+    font-family: Arial, sans-serif;
+
+    border: 1px solid #c9c9c9;
+
+    border-radius: 5px;
+
+    background: #fff;
+
+    color: #2f3a4a;
+
+    box-sizing: border-box;
+}
+
+input[type="date"],
+input[type="time"],
+select,
+textarea {
+	
+	display: block;
+
+    width: 100%;
+	
+
+    padding: 8px;
+
+    font-size: .95em;
+
+    font-family: Arial, sans-serif;
+
+    border: 1px solid #c9c9c9;
+
+    border-radius: 5px;
+
+    background: #fff;
+
+    color: #2f3a4a;
+
+    box-sizing: border-box;
+}
+input[type="number"],
+select,
+textarea {
+	
+	display: block;
+	
+	border: 1px solid #c9c9c9;
+
+    border-radius: 5px;
+
+    background: #fff;
+
+    color: #2f3a4a;
+
+    box-sizing: border-box;
+}
+	
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #ea700d;
+    outline: none;
+    box-shadow: 0 0 5px rgba(234, 112, 13, 0.3);
+}
+
+::placeholder {
+	color: #888;
+	font-style: italic;
+}
+
+select {
+	cursor: pointer;
+}
+
+.pet-type {
+    border: none;
+    padding: 0;
+    margin: 0 0 22px;
+}
+
+.pet-type legend {
+    font-weight: bold;
+    color: #2f3a4a;
+    margin-bottom: 8px;
+}
+/*Radio and checkbox*/
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: inline-block;
+}
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+input[type="radio"] {
+    width: auto;
+    margin: 0;
+}
+.radio-group label {
+	font-weight: normal;
+	margin-bottom: 0;
+}
+
+.text-reminders-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.text-reminders-checkbox label {
+    font-weight: normal;
+    margin-bottom: 0;
+	font-size: .9em;
+	max-width: 120%;
+}
+
+/*Updated submit button styling*/
+
+.submit-button input[type="submit"] {
+    background-color: #ea700d;
+    color: white;
+
+    border: none;
+    border-radius: 18px;
+
+    padding: 22px 34px;
+
+    font-size: 1em;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s ease,
+                transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+
+.submit-button input[type="submit"]:hover {
+    background-color: #c95f08;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,.15);
+
+    transform: translateY(-2px);
+}
+
+.submit-button input[type="submit"]:active {
+    transform: translateY(0);
+}
+
+.submit-button {
+    text-align: right;
+    margin-top: 70px;
+	margin-left: -40px;
+}
 /* ==== Contact Us Page ==== */
 
 .contact {

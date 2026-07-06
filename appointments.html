@@ -78,67 +78,241 @@
 							Duo ea munere erroribus!
 						</p>
 						
-							<form>
-
-								<div class="form-row">
-
-									<p>
-										Owner Name:<br>
-										<input type="text">
-									</p>
-
-									<p>
-										Your Pet's Name:<br>
-										<input type="text">
-									</p>
-
-								</div>
-
-								<div class="form-row">
-
-									<p>
-										Phone Number:<br>
-										<input type="text">
-									</p>
-
-									<p>
-										Email Address:<br>
-										<input type="text">
-									</p>
-
-								</div>
-
-								<div class="form-row">
-
-									<p>
-										Preferred Date:<br>
-										<input type="text">
-									</p>
-
-									<p>
-										Preferred Time:<br>
-										<input type="text">
-									</p>
-
-								</div>
-
-								<div class="form-row">
-
-									<p>
-										Service Requested:<br>
-										<input type="text">
-									</p>
-
-									<p>
-										Additional Notes:<br>
-										<textarea rows="4" cols="30"></textarea>
-									</p>
-
-								</div>
-
-							</form>
+						<!--Appointment Form-->
 						
-						
+							<form id="appointment-form" action="#" method="post">
+							
+								<fieldset>
+
+									<legend>Appointment Information</legend>
+
+									<p class="required-note">
+										(Fields marked with<span class="required-asterisk"> *</span> are required)
+									</p>
+
+									<div class="form-columns">
+
+										<!-- LEFT COLUMN -->
+										<div class="left-column">
+
+											<p>
+												<label for="owner-name">Owner Name *</label><br>
+
+												<input
+													type="text"
+													id="owner-name"
+													name="owner-name"
+													placeholder="Your Full Name"
+													required
+													minlength="2"
+													maxlength="50"
+													pattern="[A-Za-z '\-]+"
+													title="Please use letters only. Spaces, hyphens, and apostrophes are allowed.">
+											</p>
+
+											<p>
+												<label for="phone">Phone Number *</label><br>
+
+												<input
+													type="tel"
+													id="phone"
+													name="phone"
+													placeholder="123-456-7890"
+													required
+													maxlength="12"
+													pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+													title="Please enter the phone number in the format 123-456-7890.">
+											</p>
+
+											<div class="date-time-row">
+
+												<p>
+													<label for="appointment-date">Preferred Date *</label><br>
+
+													<input
+														type="date"
+														id="appointment-date"
+														name="appointment-date"
+														required>
+												</p>
+
+												<p>
+													<label for="appointment-time">Preferred Time *</label><br>
+
+													<input
+														type="time"
+														id="appointment-time"
+														name="appointment-time"
+														step="900"
+														required>
+												</p>
+
+											</div>
+											
+											<div class="form-row">
+												<div class="pet-details">
+
+												<fieldset class="pet-type">
+
+													<legend>Pet Type *</legend>
+
+													<div class="radio-group">
+
+														<input
+															type="radio"
+															id="dog"
+															name="pet-type"
+															value="dog"
+															required>
+
+														<label for="dog">Dog</label>
+
+														<input
+															type="radio"
+															id="cat"
+															name="pet-type"
+															value="cat">
+
+														<label for="cat">Cat</label>
+
+													</div>
+													
+													</fieldset>
+													
+													<p class="pet-weight">
+													
+													<label for="pet-weight">Pet Weight (lbs) *</label><br>
+													
+													<input	
+														type="number"
+														id="pet-weight"
+														name="pet-weight"
+														placeholder="Approx. Weight."
+														min="1"
+														max="250"
+														step="0.5"
+																			required>
+													</p>
+
+												</div>
+											</div>
+
+											<p>
+
+												<label for="service-package">Service Selection *</label><br>
+
+												<select
+													id="service-package"
+													name="service-package"
+													required>
+
+													<option value="">-- Select a Service/Package --</option>
+
+													<option value="basic">
+														Clementine's Bath & Brush
+													</option>
+
+													<option value="basic">
+														Basic Teeth & Ear Cleaning
+													</option>
+
+													<option value="full">
+														Signature Full Groom
+													</option>
+
+													<option value="spa">
+														Spa Retreat Package
+													</option>
+
+													<option value="puppy">
+														Puppy / Kitten Package
+													</option>
+
+													<option value="senior">
+														Senior Comfort Package
+													</option>
+
+												</select>
+
+											</p>
+
+											<p class="text-reminders-checkbox">
+
+												<input
+													type="checkbox"
+													id="reminders"
+													name="reminders"
+													value="yes">
+
+												<label for="reminders">
+													I'd like appointment reminders by text.
+												</label>
+
+											</p>
+
+										</div>
+
+										<!-- RIGHT COLUMN -->
+										<div class="right-column">
+
+											<p>
+
+												<label for="pet-name">Pet's Name *</label><br>
+
+												<input
+													type="text"
+													id="pet-name"
+													name="pet-name"
+													placeholder="Your Pet's Name"
+													required
+													minlength="2"
+													maxlength="30">
+
+											</p>
+											
+											
+											<p>
+
+												<label for="email">Email Address *</label><br>
+
+												<input
+													type="email"
+													id="email"
+													name="email"
+													placeholder="you@example.com"
+													required
+													maxlength="100">
+
+											</p>
+
+											<p class="additional-notes">
+
+												<label for="notes">Additional Notes</label><br>
+
+												<textarea
+													id="notes"
+													name="notes"
+													rows="5"
+													placeholder="Tell us anything you'd like us to know about your pet..."
+													maxlength="300"></textarea>
+
+											</p>
+
+											<p class="submit-button">
+
+												<input
+													type="submit"
+													value="Schedule Appointment">
+
+											</p>
+
+										</div>
+
+									</div>
+
+								</fieldset>
+
+							</form>											
 				
 				</article>
 			
@@ -159,13 +333,15 @@
 							<li>Curabitur vel hendrerit libero.</li>
 							<li>Phasellus pulvinar felis non.</li>
 							<li>Integer a nisl aliquet.</li>
+							
+						</ol>
 				
 				</article>
 				
-				<p>
-					<input type="submit" value="Schedule Appointment">
-				</p>
-					
+				<img src="images/appointments-badge.png"
+					alt="Appointment page banner">
+				
+								
 			</article>
 		
 		
@@ -196,6 +372,49 @@
     </footer>
 	
 	</div>
+	
+	<script>
+
+		const appointmentForm = document.getElementById("appointment-form");
+			
+		appointmentForm.addEventListener("submit", function (event) {
+		
+			event.preventDefault();
+			
+			const requiredFields = appointmentForm.querySelectorAll("[required]");
+			
+			for (const field of requiredFields) {
+			
+			
+				if (field.value.trim() === "") {
+				
+					alert("Please complete all required fields.");
+					
+					field.focus();
+					
+					return;
+					
+				}
+				
+				const petWeight = document.getElementById("pet-weight");
+				
+				if (Number(petWeight.value) < 2) {
+
+					alert("Pet weight should be more than 2 lbs");
+
+					petWeight.focus();
+
+					return;
+
+				}
+										
+			}
+			alert("Thank you! Your appointment request has been submitted successfully.");
+				
+				appointmentForm.reset();
+		});
+
+	</script>
 
 </body>
 
