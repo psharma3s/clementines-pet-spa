@@ -3,7 +3,8 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Clementine's Pet Spa & Grooming</title>
+	<meta name="description" content="Learn about Clementine's professional pet groomers and our experienced pet grooming team committed to trusted pet care.">
+	<title>Professional Pet Groomers - About Us</title>
 	
 	<link rel="stylesheet" href="stylesheet.css">
 </head>
@@ -14,24 +15,23 @@
 	
 	<!-- Header -->
 	
-	<header>
+	<header role="banner">
 		
 		<img src="images/logo.png"
 			alt="Clementine's Pet Spa & Grooming logo" class="logo">
 	
 		<div>
 		
-			<h1>Clementine's Pet Spa & Grooming</h1>
-		
-		
-			<p>Pampering Pets. One Paw At A Time.</p>
+			<h1>Clementine's Pet Spa & Grooming<br>
+				<span>Professional Pet Groomers You Can Trust</span>
+			</h1>
 		
 		</div>
 		
     </header>
 	
 	<!-- Top Navigation-->
-    <nav>
+    <nav role="navigation" aria-label="Primary Navigation">
 	
 		<ul>
 			<li><a href="index.html">Home</a></li>
@@ -50,15 +50,15 @@
 	</nav>
 	
 	<!-- Main Content -->
-    <main>
+    <main role="main">
 		
-		<section class="about">
+		<section class="about" aria-labelledby="about-us-heading">
 			
 			<div>
 				
 				<article>
 				
-					<h2>About Us</h2>
+					<h2 id="about-us-heading">About Us</h2>
 					
 						<div class="welcome-divider">
 				
@@ -71,27 +71,34 @@
 
 						</div>
 						
-					<h3>Our Story</h3>
+					<h3>Our Story as an Experienced Pet Grooming Team</h3>
 					
 						<p>
-							Lorem ipsum dolor sit amet, vide libris definitiones ea nec, ocurreret principes cotidieque eam et. 
-							Duo ea munere erroribus, vis ad amet latine. Illum omnes evertitur eum te, cu per enim mediocritatem. 
-							Ius eu suas deserunt dissentias. Ei simul abhorreant adipiscing ius, amet feugiat intellegebat per ex.
+							Clementine's Pet Spa & Grooming has proudly served the community for more than eight years. 
+							As professional pet groomers, our passion is providing personalized care in a welcoming, 
+							stress-free environment where every pet is treated like family. Founded by lifelong animal
+							lover Leah Nau, our salon was built on the belief that every pet deserves compassionate attention 
+							and quality grooming tailored to their individual needs.
 						</p>
 						<p>
-							Lorem ipsum dolor sit amet, vide libris definitiones ea nec, ocurreret principes cotidieque eam et. 
-							Duo ea munere erroribus, vis ad amet latine. Illum omnes evertitur eum te, cu per enim mediocritatem. 
+							Our experienced pet grooming team provides bathing, brushing, nail trimming, coat care, and other
+							grooming services for both dogs and cats. We focus on creating a calm experience that helps pets feel 
+							safe while giving owners confidence that their companions are receiving exceptional care.
+							Our goal is to create a positive experience that leaves every pet happy, healthy, comfortable, and excited to return for future visits.
 						</p>
 					
 					<h3>Our Commitment</h3>
-					
+					<p>
+						Our commitment goes beyond grooming. We strive to build lasting relationships with pet owners by providing 
+						trusted pet care, maintaining a clean and safe environment, and treating every pet with patience, kindness, and respect.
+					</p>
 						<ul>
 		
-							<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-							<li>Pellentesque habitant morbi tristique senectus et netus.</li>
-							<li>Nunc luctus sem in odio luctus finibus sed maximus.</li>
-							<li>Maecenas gravida aliquet erat, eget feugiat hendrerit.</li>
-							<li>Duis vel faucibus elit, ac aliquet sapien scelerisque.</li>
+							<li>Compassionate pet care.</li>
+							<li>Experienced and certified groomers.</li>
+							<li>Safe, clean, and stress-free environment.</li>
+							<li>Award-winning customer service.</li>
+							<li>Personalized attention for every pet.</li>
 							
 						</ul>
 				
@@ -104,7 +111,7 @@
 			<article>
 				
 				<img src="images/about-hero.jpg"
-					alt="Cat being groomed">
+					alt="Experienced Pet Grooming Team Member grooming cat">
 					
 			</article>
 		
@@ -114,7 +121,9 @@
     </main>
 	
 	<!--Footer/Bottom Navigation-->
-    <footer>
+    <footer role="contentinfo">
+	
+		<nav aria-label="Footer Navigation">
 	
 		<p>
 
@@ -129,6 +138,7 @@
 			<a href="contact.html">Contact Us</a>
 
         </p>
+		</nav>
 		
 		<p>&copy; 2026 Clementine's Pet Spa & Grooming. All Rights Reserved.</p>
 

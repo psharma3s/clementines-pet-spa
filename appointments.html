@@ -3,7 +3,9 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Clementine's Pet Spa & Grooming</title>
+	<meta name="description" content="Book pet grooming appointments online and schedule your pet spa visit with Clementine's experienced grooming team.">
+	
+	<title>Pet Grooming Apppointments - Book Now</title>
 	
 	<link rel="stylesheet" href="stylesheet.css">
 </head>
@@ -14,24 +16,24 @@
 	
 	<!-- Header -->
 	
-	<header>
+	<header role="banner">
 		
 		<img src="images/logo.png"
 			alt="Clementine's Pet Spa & Grooming logo" class="logo">
 	
 		<div>
 		
-			<h1>Clementine's Pet Spa & Grooming</h1>
-		
-		
-			<p>Pampering Pets. One Paw At A Time.</p>
+			<h1>
+				Clementine's Pet Spa & Grooming<br>
+				<span>Pet Grooming Appointments Made Easy</span>
+			</h1>
 		
 		</div>
 		
     </header>
 	
 	<!-- Top Navigation-->
-    <nav>
+    <nav role="navigation" aria-label="Primary Navigation">
 	
 		<ul>
 			<li><a href="index.html">Home</a></li>
@@ -50,15 +52,15 @@
 	</nav>
 	
 	<!-- Main Content -->
-    <main>
+    <main role="main">
 		
-		<section class="appointments">
+		<section class="appointments" aria-labelledby="appointments-heading">
 		
 			<div>
 				
 				<article>
 				
-					<h2>Schedule an Appointment</h2>
+					<h2 id="appointments-heading">Book Your Pet Grooming Appointment</h2>
 					
 						<div class="welcome-divider">
 				
@@ -74,10 +76,13 @@
 					<h3>We can't wait to pamper your pet!</h3>
 					
 						<p>
-							Lorem ipsum dolor sit amet, vide libris definitiones ea nec, ocurreret principes cotidieque eam et. 
-							Duo ea munere erroribus!
+							Scheduling your pet grooming appointment at Clementine's Pet Spa & Grooming is quick and easy. 
+							Complete the form below to book pet grooming for your dog or cat, and our team will contact you to 
+							confirm your appointment, discuss your pet's grooming needs, and help you schedule your pet spa visit
+							at a time that's convenient for you.
 						</p>
 						
+					
 						<!--Appointment Form-->
 						
 							<form id="appointment-form" action="#" method="post">
@@ -321,7 +326,7 @@
 			<article class="appointment-right">
 				
 				<img src="images/appointments-hero.jpg"
-					alt="Dog being combed">
+					alt="Dog being combed at a Pet Grooming Appointment">
 					
 				<article class="how-it-works">
 				
@@ -329,10 +334,10 @@
 					
 						<ol>
 						
-							<li>Lorem ipsum dolor sit amet.</li>
-							<li>Curabitur vel hendrerit libero.</li>
-							<li>Phasellus pulvinar felis non.</li>
-							<li>Integer a nisl aliquet.</li>
+							<li>Choose the services your pet needs.</li>
+							<li>Pick a convinient date and time.</li>
+							<li>We'll confirm your appointment.</li>
+							<li>Relax while we pamper your pet!</li>
 							
 						</ol>
 				
@@ -347,11 +352,86 @@
 		
 		</section>
 		
+		<section class="FAQ">
+		
+		<div class="welcome-divider">
+				
+						<div class="divider-line"></div>
+					
+						<h4>Frequently Asked Questions</h4>
+							
+						<div class="divider-line"></div>
+
+						</div>
+		
+		
+			
+			<p>
+				<details>
+					
+					<summary>How far in advance should I schedule my appointment?</summary>
+						
+						<p>We recommend scheduling your appointment at least one week in advance to
+							secure your preferred date and time. During busy seasons or holidays, booking
+							earlier is encouraged to ensure availability.
+						</p>
+				
+				</details>
+
+				<details>
+					
+					<summary>Can I request a specific groomer?</summary>
+					
+						<p>Yes! If your preferred groomer is available, we'll do our best to 
+							accommodate your request. Our experienced grooming team works together 
+							to provide the same high level of care for every pet.
+						</p>
+				
+				</details>
+
+				<details>
+					
+					<summary>How long will my pet's appointment take?</summary>
+						
+						<p>Most grooming appointments take between one and three hours, 
+							depending on your pet's size, coat condition, temperament, and the
+							services requested. We'll provide an estimated completion time when confirming your appointment.
+						</p>
+				
+				</details>
+
+				<details>
+				
+					<summary>What should I bring to my appointment?</summary>
+					
+						<p>Please let us know about any allergies, medical conditions, or special
+							grooming requests before your visit. Sharing this information helps us provide
+							the safest and most comfortable experience for your pet.
+						</p>
+						
+				</details>
+
+				<details>
+					
+					<summary>What if I need to cancel or reschedule?</summary>
+					
+						<p>If your plans change and need to reschedule your pet grooming appointment, we kindly ask that you notify us at least 24 hours in advance.
+							This allows us to offer the appointment to another pet while helping us maintain an efficient schedule.
+						</p>
+
+				</details>
+			
+			</p>
+			
+		</section>
+		
 
     </main>
 	
 	<!--Footer/Bottom Navigation-->
-    <footer>
+    <footer role="contentinfo">
+	
+	<nav role="navigation" aria-label="Primary Navigation">
 	
 		<p>
 
@@ -366,6 +446,8 @@
 			<a href="contact.html">Contact Us</a>
 
         </p>
+		
+	</nav>
 		
 		<p>&copy; 2026 Clementine's Pet Spa & Grooming. All Rights Reserved.</p>
 

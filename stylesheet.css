@@ -33,11 +33,13 @@ header h1 {
 	color: #2f3a4a;
 }
 
-header p {
+header span {
 	margin: 2px 0 0 0;
 	font-family: "Freestyle Script", "Brush Script MT", cursive;
-	font-size: 3em;
-	color: #ea700d;
+	font-size: 1.1em;
+	font-weight: normal;
+	color: #A94F00;
+	
 }
 .logo {
     margin-right: 15px;
@@ -93,7 +95,7 @@ nav ul li a {
 nav ul li a:hover,
 #current-page {
     background-color: #f3c7a2;
-    color: #ea700d;
+    color: #7030A0;
 }
 
 
@@ -124,10 +126,12 @@ nav ul li a:hover,
 	flex: 1;
 }
 
-.welcome > article img {
+.hero-image img{
 	display: block;
 	margin-top: 50px;
 	margin-right: 15px;
+	margin-left: 50px;
+	max-width:90%;
 
 }
 
@@ -137,7 +141,7 @@ nav ul li a:hover,
 	margin-bottom: 10px;
 	color: #2f3a4a;
 	font-family: Elephant, Georgia, sans-serif;
-	font-size: 3em;
+	font-size: 2.3em;
 	line-height: 1.15;
 	
 }
@@ -145,7 +149,7 @@ nav ul li a:hover,
 .welcome-text {
 	font-family: "Freestyle Script", "Brush Script MT", cursive;
 	font-size: 1.3em;
-	color: #ea700d;
+	color: #A94F00;
 	font-weight: normal;
 }
 
@@ -173,8 +177,9 @@ nav ul li a:hover,
 }
 
 .welcome p {
-	line-height: 1.4;
-	margin-bottom: 50px;
+	line-height: 1.6;
+	margin-bottom: 30px;
+	font-size: 1rem;
 	
 }
 .welcome > div > article:first-child p {
@@ -185,12 +190,15 @@ nav ul li a:hover,
 	display: flex;
 	align-items: stretch;
 	
+	
 	width: 420px;
+	height: 120px;
 	border: 2px solid #2f3a4a;
 	border-radius: 12px;
 	overflow: hidden;
 	background-color: #f7e6d7;
-	margin: 15px;
+	margin: 75px;
+	margin-left: 140px;
 }
 .promise img {
 	width:120px;
@@ -351,6 +359,10 @@ footer p:last-child {
 	display: block;
 	margin-right: 15px;
 	margin-top: 15px;
+	
+	border: 1px solid #ea700d;
+	border-radius: 10px;
+	box-shadow: 0 6px 15px rgba(0,0,0,.3);
 }
 
 .about h2,
@@ -377,7 +389,7 @@ footer p:last-child {
 
 .about h3,
 .services h3 {
-	color: #ea700d;
+	color: #A94F00;
 	font-family: "Freestyle Script", "Brush Script MT", cursive;
 	font-size: 3em;
 	font-weight: normal;
@@ -387,9 +399,9 @@ footer p:last-child {
 
 .about p,
 .services p {
-	line-height: 1.5;
+	line-height: 1.6;
 	max-width: 90%;
-	margin-bottom: -10px;
+	margin-bottom:30px;
 	margin-top: 35px;
 }
 
@@ -422,23 +434,23 @@ footer p:last-child {
 }
 
 .appointments h2 {
-    margin-top: 10px;
+    margin-top: 25px;
     margin-bottom: 10px;
 
     color: #2f3a4a;
     font-family: Elephant, Georgia, serif;
-    font-size: 3em;
+    font-size: 2.5em;
     line-height: 1.15;
 }
 
 .appointments .welcome-divider {
-	width: 74%;
+	width: 93%;
 	margin-bottom: -60px;
 	margin-top: -10px;
 }
 
 .appointments h3 {
-    color: #ea700d;
+    color: #A94F00;
     font-family: "Freestyle Script", "Brush Script MT", cursive;
     font-size: 3.5em;
     font-weight: normal;
@@ -447,7 +459,7 @@ footer p:last-child {
 }
 
 .appointments p {
-	line-height: 1.5;
+	line-height: 1.6;
 	max-width:80%;
 	margin-bottom: 30px;
 }
@@ -460,19 +472,22 @@ footer p:last-child {
 .appointment-right img {
     display: block;
     margin-bottom: 20px;
+	border: 1px solid #ea700d;
+	border-radius: 10px;
+	box-shadow: 0 6px 15px rgba(0,0,0,.3);
 }
 /* === How It Works Card === */
 
 .how-it-works {
-    width: 260px;
+    width: 290px;
 
-    padding: 15px;
+    padding: 25px;
 
     border: 2px solid #2f3a4a;
     border-radius: 12px;
-	margin-top: 30px;
+	margin-top: 60px;
 	margin-right: -100px;
-	margin-bottom: 40px;
+	margin-bottom: 80px;
 	margin-left: -95px;
 
     background-color: #f7e6d7;
@@ -484,7 +499,7 @@ footer p:last-child {
 
     text-align: center;
 
-    color: #ea700d;
+    color: #A94F00;
 
     font-family: "Freestyle Script", "Brush Script MT", cursive;
     font-size: 2.5em;
@@ -492,7 +507,14 @@ footer p:last-child {
 }
 .how-it-works ol {
     padding-left: 20px;
-    line-height: 1.8;
+    line-height: 1.6;
+	width: 100%;
+	font-weight: bold;
+	font: #2f3a4a;
+	
+}
+.how-it-works ol li {
+	margin-bottom: 10px;
 }
 /*=== Form CSS ===*/
 
@@ -586,7 +608,7 @@ legend {
 	margin-left: 8px;
 }
 .required-asterisk {
-	color: #ea700d;
+	color: #A94F00;
 	font-weight: bold;
 }
 
@@ -727,7 +749,7 @@ input[type="radio"] {
 /*Updated submit button styling*/
 
 .submit-button input[type="submit"] {
-    background-color: #ea700d;
+    background-color: #A94F00;
     color: white;
 
     border: none;
@@ -763,6 +785,114 @@ input[type="radio"] {
     margin-top: 70px;
 	margin-left: -40px;
 }
+
+
+/*=== FAQ ===*/
+
+.FAQ{
+    margin:50px 20px;
+}
+
+.FAQ h4{
+    color:#A94F00;
+    font-family:"Freestyle Script","Brush Script MT",cursive;
+    font-size:3.5em;
+    font-weight:normal;
+    margin-bottom:80px;
+}
+
+.FAQ details{
+
+    background:#f7e6d7;
+    border:2px solid #2f3a4a;
+    border-radius:10px;
+
+    margin-bottom:15px;
+
+    overflow:hidden;
+
+    transition:.3s;
+}
+
+.FAQ details:hover{
+
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+	background:#fff7f0;
+    border-color:#ea700d;
+    transition:.25s;
+
+}
+
+.FAQ summary{
+
+    cursor:pointer;
+
+    padding:16px 20px;
+
+    font-size:1.05em;
+    font-weight:bold;
+
+    color:#2f3a4a;
+
+    list-style:none;
+
+}
+
+.FAQ summary::-webkit-details-marker{
+
+    display:none;
+
+}
+
+.FAQ summary::before{
+
+    content:"+";
+
+    color:#ea700d;
+
+    font-size:1.5em;
+
+    font-weight:bold;
+
+    margin-right:12px;
+
+}
+
+.FAQ details[open] summary::before{
+
+    content:"–";
+
+}
+.FAQ details[open]{
+
+    padding-bottom:10px;
+
+}
+
+.FAQ p{
+
+    padding:0 20px 18px 52px;
+
+    line-height:1.6;
+
+    margin:0;
+
+    max-width:100%;
+	
+    padding-top:15px;
+
+
+}
+.FAQ .welcome-divider {
+	width: 100%;
+	margin-bottom: -50px;
+	margin-top: -10px;
+}
+	
+
+
+	
+
 /* ==== Contact Us Page ==== */
 
 .contact {
@@ -796,17 +926,25 @@ input[type="radio"] {
 }
 
 .contact h3 {
-    color: #ea700d;
+    color: #A94F00;
     font-family: "Freestyle Script", "Brush Script MT", cursive;
-    font-size: 3.5em;
+    font-size: 3em;
     font-weight: normal;
 
     margin-bottom: 25px;
 }
 .contact p {
-	line-height: 1.5;
-	max-width:80%;
+	line-height: 1.6;
+	max-width:100%;
 	margin-bottom: 30px;
+}
+.contact-hero-image img {
+	border: 1px solid #ea700d;
+	border-radius: 10px;
+	box-shadow: 0 6px 15px rgba(0,0,0,.3);
+	
+	margin-top: 30px;
+	margin-left: 180px;
 }
 
 .contact dl {
@@ -842,4 +980,231 @@ input[type="radio"] {
     margin-bottom: 20px;
 
     line-height: 1.5;
+}
+
+/*=== Careers ===*/
+
+.careers{
+
+    margin:60px auto;
+
+    padding:35px;
+
+    max-width:850px;
+
+    background:#f7e6d7;
+
+    border:2px solid #2f3a4a;
+
+    border-radius:12px;
+
+    box-shadow:4px 4px 12px rgba(0,0,0,.15);
+
+}
+
+.careers-heading{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:25px;
+	
+	
+}
+
+.careers .primary-text {
+	
+	color: #A94F00;
+    font-family: "Freestyle Script", "Brush Script MT", cursive;
+    font-size: 3.5em;
+    font-weight: normal;
+
+    margin-bottom: 25px;
+	margin-top: -10px;
+}
+	
+
+.careers-heading img{
+
+    width:84px;
+
+    height:auto;
+	margin-top: -40px;
+
+}
+
+.careers p{
+
+    line-height:1.7;
+
+    margin-bottom:18px;
+	
+	font-size: 1em;
+
+}
+
+.careers p:last-child{
+
+    margin-bottom:0;
+
+}
+
+.careers a{
+
+    color:#A94F00;
+
+    font-weight:bold;
+
+    text-decoration:none;
+
+}
+
+.careers a:hover{
+
+    text-decoration:underline;
+
+}
+
+/*=== Responsive Enhancements ===*/
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+@media (max-width:992px){
+
+    .welcome,
+    .about,
+    .services,
+    .appointments,
+    .contact{
+        flex-direction:column;
+        align-items:center;
+        gap:30px;
+    }
+
+    .hero-image img,
+    .contact-hero-image img,
+    .about > article img,
+    .services > article img,
+    .appointment-right img{
+        margin:30px auto;
+    }
+
+    .promise{
+        margin:40px auto;
+        max-width:100%;
+    }
+
+    .how-it-works{
+        margin:40px auto;
+        max-width:100%;
+    }
+
+    .features{
+        flex-direction:column;
+    }
+
+    .form-columns{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .right-column{
+        margin-left:0;
+    }
+
+    .submit-button{
+        text-align:center;
+        margin:40px 0 0;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"]{
+        width:100%;
+    }
+
+    .pet-details{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .date-time-row{
+        flex-direction:column;
+        gap:0;
+    }
+}
+
+@media (max-width:768px){
+
+    header{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .logo{
+        margin:0 0 15px;
+    }
+
+    header h1{
+        font-size:2rem;
+    }
+
+    .welcome h2,
+    .about h2,
+    .services h2,
+    .appointments h2,
+    .contact h2{
+        font-size:2.2rem;
+        text-align:center;
+    }
+
+    nav ul{
+        flex-direction:column;
+    }
+
+    nav ul li{
+        border-right:none;
+        border-bottom:1px solid #2f3a4a;
+    }
+
+    nav ul li:last-child{
+        border-bottom:none;
+    }
+
+    .section-divider{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .section-line{
+        width:120px;
+        flex:0 0 auto;
+    }
+
+    .promise,
+    .careers,
+    .how-it-works{
+        width:100%;
+        box-sizing:border-box;
+    }
+
+    .contact dd{
+        margin-left:0;
+    }
+
+    .FAQ h4,
+    .appointments h3,
+    .contact h3,
+    .about h3,
+    .services h3{
+        text-align:center;
+    }
 }

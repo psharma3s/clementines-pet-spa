@@ -3,7 +3,11 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Clementine's Pet Spa & Grooming</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Clementine's - Best Pet Grooming Services</title>
+	
+	<meta name="description" content="Discover the best pet grooming services at Clementine's Pet Spa & Grooming with professional care for every pet.">
 	
 	<link rel="stylesheet" href="stylesheet.css">
 	
@@ -15,11 +19,10 @@
 		}
 
 
-		.welcome > article img {
-		    border: 1px solid #ea700d;
-
+		.hero-image img {
+			border: 1px solid #ea700d;
 			border-radius: 10px;
-			box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+			box-shadow: 0 6px 15px rgba(0,0,0,.3);
 		}
 		
 		.section-divider h2 {
@@ -36,24 +39,23 @@
 	
 	<!-- Header -->
 	
-	<header>
+	<header role="banner">
 		
 		<img src="images/logo.png"
-			alt="Clementine's Pet Spa & Grooming logo" class="logo">
+			alt="Clementine's Top Rated Pet Spa & Grooming logo" class="logo">
 	
 		<div>
 		
-			<h1>Clementine's Pet Spa & Grooming</h1>
-		
-		
-			<p>Pampering Pets. One Paw At A Time.</p>
-		
+			<h1>Clementine's Pet Spa & Grooming<br>
+				<span>Best Pet Grooming Services - Pampering Pets, One Paw at a Time</span>
+			</h1>
+						
 		</div>
 		
     </header>
 	
 	<!-- Top Navigation-->
-    <nav>
+    <nav role="navigation" aria-label="Primary Navigation">
 	
 		<ul>
 			<li><a href="#" id="current-page">Home</a></li>
@@ -72,20 +74,20 @@
 	</nav>
 	
 	<!-- Main Content -->
-    <main>
+    <main role="main">
 		
 		<!-- Welcome Section-->
 		
-		<section class="welcome">
+		<section class="welcome" aria-labelledby="welcome-heading">
 		
-		<div>
+		<div class="welcome-left">
 		
 			<article>
 		
-				<h2>
+				<h2 id="welcome-heading">
 					<span class="welcome-text">Welcome to</span><br>
 					<span class="primary-text business-name">Clementine's</span><br> 
-					Pet Spa & Grooming!
+					 Top Rated Pet Spa & Grooming!
 				
 				</h2>
 				
@@ -101,13 +103,49 @@
 				</div>
 		
 				<p>
-					Lorem ipsum dolor sit amet, vide libris definitiones ea nec, ocurreret principes cotidieque eam et. 
-					Duo ea munere erroribus, vis ad amet latine. Illum omnes evertitur eum te, cu per enim mediocritatem. 
-					Ius eu suas deserunt dissentias. Ei simul abhorreant adipiscing ius, amet feugiat intellegebat per ex.
+					
+					At Clementine's Pet Spa & Grooming, we are proud to provide the best pet 
+					grooming services for pets of all breeds and sizes. As an award-winning pet spa, 
+					our experienced team is dedicated to making every visit comfortable, relaxing, 
+					and enjoyable while helping your pet look and feel their very best.
+					Our welcoming environment is designed to reduce stress and ensure every pet 
+					receives the attention, comfort, and care they deserve from the moment they arrive.
+
 				</p>
+					
+				<p>
+					Our professional cat and dog grooming services include bathing, brushing, nail trimming,
+					ear cleaning, and coat care tailored to your pet's individual needs. We use gentle handling
+					techniques and quality grooming products to ensure every pet receives safe and personalized care.
+				</p>
+				
+				<p>
+					As a top rated pet spa, we believe every pet deserves patience, kindness, and exceptional care. 
+					Whether you're visiting us for the first time or returning for regular grooming, we look forward
+					to welcoming you and providing an experience both you and your pet can trust.
+				</p>
+				
+				
+				
+				
+			</article>
+		
+		</div>
+		
+		<div class="welcome-right">
+		
+		<article class="hero-image">
+			
+				<img src="images/home-hero.jpg"
+					alt="Cat relaxing in a spa towel">
+			
 			</article>
 			
+		
+			
 				<!-- Our Promise -->
+				
+		
 				
 			<article class="promise">
 			
@@ -124,27 +162,22 @@
 				</div>
 				
 			</article>
-			
 		</div>
+		
 			
-			<article>
 			
-				<img src="images/home-hero.jpg"
-					alt="Cat relaxing in a spa towel">
-			
-			</article>
 		
 		</section>
 		
 		<!-- Why Choose Us -->
 		
-		<section class="why-choose">
+		<section class="why-choose" aria-labelledby="why-choose-heading">
 		
 		<div class="section-divider">
 		
 			<div class="section-line"></div>
 			
-			<h2 class="primary-text">Why Choose Us?</h2>
+			<h2 id="why-choose-heading" class="primary-text">Why Choose Us?</h2>
 			
 			<div class="section-line"></div>
 			
@@ -226,7 +259,9 @@
     </main>
 	
 	<!--Footer/Bottom Navigation-->
-    <footer>
+    <footer role="contentinfo">
+	
+		<nav aria-label="Footer Navigation">
 	
 		<p>
 
@@ -241,6 +276,7 @@
 			<a href="contact.html">Contact Us</a>
 
         </p>
+		</nav>
 		
 		<p>&copy; 2026 Clementine's Pet Spa & Grooming. All Rights Reserved.</p>
 

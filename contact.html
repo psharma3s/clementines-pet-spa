@@ -3,7 +3,9 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Clementine's Pet Spa & Grooming</title>
+	<meta name="description" content="Contact your local pet groomers for appointments, questions, or visit our pet spa for professional grooming services.">
+	
+	<title>Contact Your Local Pet Groomers - Contact Us</title>
 	
 	<link rel="stylesheet" href="stylesheet.css">
 </head>
@@ -14,24 +16,25 @@
 	
 	<!-- Header -->
 	
-	<header>
+	<header role="banner">
 		
 		<img src="images/logo.png"
 			alt="Clementine's Pet Spa & Grooming logo" class="logo">
 	
 		<div>
 		
-			<h1>Clementine's Pet Spa & Grooming</h1>
-		
-		
-			<p>Pampering Pets. One Paw At A Time.</p>
+			<h1>
+				Clementine's Pet Spa & Grooming
+				<br>
+				<span>Contact Your Local Pet Groomers</span>
+			</h1>
 		
 		</div>
 		
     </header>
 	
 	<!-- Top Navigation-->
-    <nav>
+    <nav role="navigation" aria-label="Primary Navigation">
 	
 		<ul>
 			<li><a href="index.html">Home</a></li>
@@ -50,15 +53,15 @@
 	</nav>
 	
 	<!-- Main Content -->
-    <main>
+    <main role="main">
 		
-		<section class="contact">
+		<section class="contact" aria-labelledby="contact-us-heading">
 			
 			<div>
 				
 				<article>
 				
-					<h2>Contact Us</h2>
+					<h2 id="contact-us-heading"">Contact Us</h2>
 					
 						<div class="welcome-divider">
 				
@@ -71,11 +74,13 @@
 
 						</div>
 						
-					<h3>We're Here To Help</h3>
+					<h3>Visit Our Pet Spa - We're Here To Help</h3>
 					
 						<p>
-							Lorem ipsum dolor sit amet, eam et. 
-							Duo ea munere erroribus, vis ad amet latine!
+							Have questions about our grooming services or need help choosing the right option for your pet?
+							Our friendly team is always happy to assist. Contact your local pet groomers by phone, email, or
+							stop by at our grooming location anytime. We welcome walk-ins but services may depend on availability. 
+							We look forward to answering your questions and welcoming you to Clementine's Pet Spa & Grooming.
 						</p>
 						
 						
@@ -85,7 +90,7 @@
 
 							<img src="images/location-icon.png"
 								class="small-icon"
-								alt="Location">
+								alt="Location-icon">
 
 							Address
 
@@ -99,7 +104,7 @@
 						<dt>
 
 							<img src="images/phone-icon.png"
-								 alt="Phone">
+								 alt="Contact Your Local Pet Groomers by Phone">
 
 							Phone
 
@@ -113,7 +118,7 @@
 
 							<img src="images/email-icon.png"
 								 class="small-icon"
-								 alt="Email">
+								 alt="Email-icon">
 
 							Email
 
@@ -126,7 +131,7 @@
 						<dt>
 
 							<img src="images/hours-icon.png"
-								 alt="Hours">
+								 alt="Clock-icon">
 
 							Hours
 
@@ -139,39 +144,84 @@
 						</dd>
 
 					</dl>
-						
+					
+					
 				</article>
 			
 			</div>
 			
+			<div class="contact-hero-image">
+			
 			<article>
-				
+									
 				<img src="images/contact-hero.jpg"
 					alt="Dog in a shower cap">
 					
 			</article>
+			</div>
 		
 		</section>
+		
+		<!-- Careers Section -->
+
+					<section class="careers">
+					
+					<div class="careers-heading">
+
+						<img src="images/paw-icon.png"
+							 alt="Paw icon">
+
+						<h3 class="primary-text">
+							Interested in Joining Our Team?
+						</h3>
+						
+						<img src="images/paw-icon.png"
+							 alt="Paw icon">
+
+					</div>
+
+					
+
+						<p>
+							Passionate about <strong>pet grooming careers</strong> and making a difference in the lives of pets and their families?
+							Clementine's Pet Spa & Grooming is always interested in meeting compassionate, dependable individuals who are
+							passionate about animal care and outstanding customer service.
+						</p>
+
+						<p>
+							If you're interested in employment opportunities, we'd love to hear from you.
+							Email your resume to
+							<a href="mailto:careers@clementinespetspa.com">
+								careers@clementinespetspa.com
+							</a>.
+							If we don't have an opening available today, we'll gladly keep your resume on file and contact you when future opportunities become available.
+						</p>
+
+					</section>
 		
 
     </main>
 	
 	<!--Footer/Bottom Navigation-->
-    <footer>
+    <footer role="contentinfo">
 	
-		<p>
+			<nav role="navigation" aria-label="Primary Navigation">
+			
+				<p>
 
-			<a href="index.html">Home</a> |
+					<a href="index.html">Home</a> |
 
-			<a href="about.html">About Us</a> |
+					<a href="about.html">About Us</a> |
 
-			<a href="services.html">Services</a> |
+					<a href="services.html">Services</a> |
 
-			<a href="appointments.html">Appointments</a> |
+					<a href="appointments.html">Appointments</a> |
 
-			<a href="contact.html">Contact Us</a>
+					<a href="contact.html">Contact Us</a>
 
-        </p>
+				</p>
+				
+			</nav>
 		
 		<p>&copy; 2026 Clementine's Pet Spa & Grooming. All Rights Reserved.</p>
 

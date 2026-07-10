@@ -3,7 +3,8 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Clementine's Pet Spa & Grooming</title>
+	<meta name="description" content="Explore our full service grooming and pet grooming packages designed to keep your pet clean, healthy, and happy.">
+	<title>Full-Service Grooming - Our Services</title>
 	
 	<link rel="stylesheet" href="stylesheet.css">
 </head>
@@ -14,24 +15,23 @@
 	
 	<!-- Header -->
 	
-	<header>
+	<header role="banner">
 		
 		<img src="images/logo.png"
 			alt="Clementine's Pet Spa & Grooming logo" class="logo">
 	
 		<div>
 		
-			<h1>Clementine's Pet Spa & Grooming</h1>
-		
-		
-			<p>Pampering Pets. One Paw At A Time.</p>
+			<h1>Clementine's Pet Spa & Grooming<br>
+				<span>Full Service Grooming & Spa Care</span>
+			</h1>
 		
 		</div>
 		
     </header>
 	
 	<!-- Top Navigation-->
-    <nav>
+    <nav role="navigation" aria-label="Primary Navigation">
 	
 		<ul>
 			<li><a href="index.html">Home</a></li>
@@ -50,15 +50,15 @@
 	</nav>
 	
 	<!-- Main Content -->
-    <main>
+    <main role="main">
 		
-		<section class="services">
+		<section class="services" aria-labelledby="our-services-heading">
 		
 			<div>
 				
 				<article>
 				
-					<h2>Our Services</h2>
+					<h2 id="our-services-heading">Our Services</h2>
 					
 						<div class="welcome-divider">
 				
@@ -74,24 +74,38 @@
 					<h3>Full Service Grooming & Spa Care</h3>
 					
 						<p>
-							Lorem ipsum dolor sit amet, vide libris definitiones ea nec, ocurreret principes cotidieque eam et. 
-							Duo ea munere erroribus, vis ad amet latine. Illum omnes evertitur eum te, cu per enim mediocritatem. 
-							Ius eu suas deserunt dissentias. Ei simul abhorreant adipiscing ius, amet feugiat intellegebat per ex.
+							At Clementine's Pet Spa & Grooming, our full-service grooming is designed to keep your
+							pets looking and feeling their very best. From routine maintenance to complete spa treatments,
+							our experienced groomers provide personalized care in a calm, safe, and welcoming environment.
+							Every visit is tailored to your pet's breed, coat type, and individual needs to ensure a comfortable 
+							and enjoyable grooming experience.
+						</p>
+						
+						<p>
+							We offer a variety of pet grooming packages that include bathing, brushing, nail trimming, ear cleaning, 
+							teeth brushing, and specialty spa treatments. Whether your pet needs a quick refresh or a complete makeover, 
+							our professional team uses gentle handling techniques and high-quality grooming products to deliver exceptional results.
 						</p>
 						
 						<h4>Our Services Include:</h4>
 					
 						<ul>
 		
-							<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-							<li>Pellentesque habitant morbi tristique senectus et netus.</li>
-							<li>Nunc luctus sem in odio luctus finibus sed maximus.</li>
-							<li>Maecenas gravida aliquet erat, eget feugiat hendrerit.</li>
-							<li>Duis vel faucibus elit, ac aliquet sapien scelerisque.</li>
-							<li>Quis nostrud exercitation ullamco laboris.</li>
-							<li>Eiusmod tempor incididunt ut labore.</li>
+							<li>Full-Service Grooming.</li>
+							<li>Bath & Brush.</li>
+							<li>Nail Trimming.</li>
+							<li>Ear Cleaning.</li>
+							<li>Teeth Brushing & Cleaning.</li>
+							<li>Flea & Tick Treatment.</li>
+							<li>Specialty Spa Treatments.</li>
 							
 						</ul>
+						
+						<p>
+							Our pet bath and brush service is perfect for maintaining a clean, healthy coat between full grooming appointments.
+							No matter which service you choose, our goal is to provide professional care that keeps your pet comfortable, healthy, 
+							and looking their best while giving you complete peace of mind.
+						</p>
 				
 				</article>
 			
@@ -100,7 +114,7 @@
 			<article>
 				
 				<img src="images/services-hero.jpg"
-					alt="Two dogs in a foamy bathtub">
+					alt="Two dogs enjoying Pet Bath and Brush">
 					
 			</article>
 		
@@ -111,7 +125,9 @@
     </main>
 	
 	<!--Footer/Bottom Navigation-->
-    <footer>
+    <footer role="contentinfo">
+	
+		<nav aria-label="Footer Navigation">
 	
 		<p>
 
@@ -126,6 +142,8 @@
 			<a href="contact.html">Contact Us</a>
 
         </p>
+		
+		</nav>
 		
 		<p>&copy; 2026 Clementine's Pet Spa & Grooming. All Rights Reserved.</p>
 
